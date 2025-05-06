@@ -25,13 +25,14 @@ body{
     z-index: 10;
     border-radius: 30px;
     background: white;
-    // border: 1px solid black;
-}
-.Panel_Control > div > img{
-    height: 100px;
-    width: 100px;
-    object-fit: cover;
-    border-radius: 100%;
+    div {
+        img{
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
 }
 
 .Panel_Control_Perfil{
@@ -40,20 +41,17 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // border: 1px solid black;
     width: 100%;
-
-}
-.Panel_Control_Perfil > div{
-    // border: 1px solid black;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.Panel_Control_Perfil > div > h2{
-    margin: 0;
+    div{
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            margin: 0;
+        }
+    }
 }
 
 .Panel_Control_Buttons{
@@ -62,32 +60,30 @@ body{
     flex-direction: column;
     padding: 5px;
     gap: 5px;
-    // border: 1px solid black;
     height: 100%;
     width: 100%;
+    button{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 5px;
+        width: 100%;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+        background: none;
+        i{
+            font-size: 18px;
+        }
+        &:hover{
+            background-color: #f0f0f0;
+            transition: 0.3s;
+        }
+    }
 }
-.Panel_Control_Buttons > button{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
-    width: 100%;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    background: none;
-    i{
-        font-size: 18px;
-    }
-    &:hover{
-        background-color: #f0f0f0;
-        transition: 0.3s;
-    }
 
-    
-}
 .Content{
     display: flex;
     justify-content: center;
@@ -99,9 +95,84 @@ body{
     
 }
 .Container-Home{
+    position: relative;
     width: 95%;
     height: 93%;
     background: white;
     border-radius: 30px;
     box-shadow: 1px 2px 50px 5px #0000003d;
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 96.4%;
+        height: 30px;
+        padding: 20px;
+        border-radius: 30px 30px 0px 0px;
+        border: 1px solid black;
+    }
+}
+.Container-LIST{
+    position: relative;
+    width: 95%;
+    height: 93%;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 1px 2px 50px 5px #0000003d;
+    
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 96.4%;
+        height: 30px;
+        padding: 20px;
+        border-radius: 30px 30px 0px 0px;
+        border: 1px solid black;
+        h3{
+            
+        }
+    }
+
+    .Main-Tarea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+
+        .Container-Tarea{
+            display: flex;
+            flex-direction: column;
+        }
+        .Container-buttons{
+            display: flex;
+            padding: 10px;
+            width: 98.1%;
+            border: 1px solid black;
+            transition: 300ms all;
+            button{
+                font-size: 18px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                transition: 300ms all;
+                i{
+                    transition: 300ms all;
+                    color: red;
+
+                }
+                &:hover{
+                    color: red;
+                    i{
+                        background-color: red;
+                        color: white;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+        
+    }
 }
