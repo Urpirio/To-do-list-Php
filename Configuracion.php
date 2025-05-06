@@ -40,7 +40,7 @@ include 'Data.php';
         
     </section>
     <script src = "UserLocation.js"></script>
-    <script src = "Funciones.js" ></script>
+    <script src = "Navegation.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
 </html>
