@@ -6,7 +6,8 @@
     <title>to do list</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet/less" type="text/css" href="style.less" /> 
-    
+    <script src = "ModalList.js" ></script>
+
 </head>
 
 <?php
@@ -36,13 +37,28 @@ include 'Data.php';
             </div>
         </header>
         <section class = "Content">
-            <div class = "Container-Home">
+            <div class = "Container-LIST">
+                <header>
+                    <h3>Bandeja de entrada</h3>
+                </header>
+                <main class = 'Main-Tarea'>
+                    <div class = 'Container-Tarea'   id = 'Container_Tarea'>
 
+                    </div>
+                    
+                    <div class = 'Container-buttons'>
+                        <button onclick = "Modal_List()">
+                            <i class='bx bx-plus'></i>
+                            <span>Añadir Tarea</span>
+                        </button>
+                        
+                    </div>
+                </main>
             </div>
         </section>
     </section>
     <script src = "UserLocation.js"></script>
-    <script src = "Funciones.js" ></script>
+    <script src = "Navegation.js" ></script>
     <script src="https://cdn.jsdelivr.net/npm/less" ></script>
 </body>
 </html>
